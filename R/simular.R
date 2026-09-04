@@ -1,6 +1,16 @@
-simular <- function(attacks, hit, rr_hit, critical_hit = 6, sustained = 0
-                    , enable_lethals = FALSE, wound, rr_wound, anti
-                    , save, enable_DW, damage)
+simular <- function(
+    attacks, 
+    hit, 
+    rr_hit = 0, 
+    critical_hit = 6, 
+    sustained = 0 , 
+    enable_lethals = FALSE, 
+    wound, 
+    rr_wound = 0, 
+    anti = 6, 
+    save, 
+    enable_DW = FALSE, 
+    damage)
   {
   result <- impactar(attacks, hit, rr_hit, critical_hit)
   result_sust <- sostenidos(result, sustained)
